@@ -183,6 +183,8 @@ class WasteCollectionCard extends HTMLElement {
       ha-card {
         padding: 0;
         overflow: hidden;
+        background: transparent !important;
+        box-shadow: none !important;
       }
 
       .card-header {
