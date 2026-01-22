@@ -17,7 +17,7 @@ const WASTE_TYPES = {
   restmuell: {
     name: "Restmüll",
     icon: "mdi:trash-can-outline",
-    color: "158, 158, 158", // grey
+    color: "50, 50, 50", // schwarz/dunkelgrau
   },
   bio: {
     name: "Biotonne",
