@@ -218,19 +218,19 @@ class WasteCollectionCard extends HTMLElement {
 
       /* Kompaktes Layout bei 4 Spalten */
       .waste-grid.columns-4 .waste-card {
-        padding: 10px 4px;
+        padding: 12px 4px;
       }
       .waste-grid.columns-4 .waste-icon {
-        --mdc-icon-size: 24px;
+        --mdc-icon-size: 28px;
       }
       .waste-grid.columns-4 .icon-container {
-        margin-bottom: 4px;
+        margin-bottom: 6px;
       }
       .waste-grid.columns-4 .name {
-        font-size: 0.75em;
+        font-size: 0.8em;
       }
       .waste-grid.columns-4 .state {
-        font-size: 0.7em;
+        font-size: 0.75em;
       }
       .waste-grid.columns-4 .badge {
         width: 14px;
@@ -360,12 +360,12 @@ class WasteCollectionCard extends HTMLElement {
         50% { transform: scale(1.1); }
       }
 
+      /* Bei schmalen Fenstern: Spalten beibehalten, nur etwas kompakter */
       @media (max-width: 400px) {
-        .waste-grid.columns-2 { grid-template-columns: repeat(2, 1fr); }
-        .waste-card { padding: 12px 4px; }
-        .waste-icon { --mdc-icon-size: 32px; }
-        .name { font-size: 0.85em; }
-        .state { font-size: 0.75em; }
+        .waste-card { padding: 10px 4px; }
+        .waste-icon { --mdc-icon-size: 28px; }
+        .name { font-size: 0.8em; }
+        .state { font-size: 0.7em; }
       }
     `;
   }
