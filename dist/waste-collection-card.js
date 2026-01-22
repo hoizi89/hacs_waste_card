@@ -216,6 +216,32 @@ class WasteCollectionCard extends HTMLElement {
         cursor: pointer;
       }
 
+      /* Kompaktes Layout bei 4 Spalten */
+      .waste-grid.columns-4 .waste-card {
+        padding: 10px 4px;
+      }
+      .waste-grid.columns-4 .waste-icon {
+        --mdc-icon-size: 24px;
+      }
+      .waste-grid.columns-4 .icon-container {
+        margin-bottom: 4px;
+      }
+      .waste-grid.columns-4 .name {
+        font-size: 0.75em;
+      }
+      .waste-grid.columns-4 .state {
+        font-size: 0.7em;
+      }
+      .waste-grid.columns-4 .badge {
+        width: 14px;
+        height: 14px;
+        top: -2px;
+        right: -6px;
+      }
+      .waste-grid.columns-4 .badge ha-icon {
+        --mdc-icon-size: 10px;
+      }
+
       .waste-card:hover {
         background: rgba(var(--waste-color), 0.15);
       }
