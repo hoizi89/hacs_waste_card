@@ -286,12 +286,16 @@ class WasteCollectionCard extends HTMLElement {
 
       /* Animations */
       .urgency-heute .waste-icon {
-        animation: pulse 0.5s ease-in-out infinite, wobbling 0.3s linear infinite alternate;
-        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.9));
+        animation: pulse 0.4s ease-in-out infinite, shake 0.15s linear infinite;
+        filter: drop-shadow(0 0 12px rgba(255, 255, 255, 1));
+      }
+
+      .urgency-heute .waste-card {
+        animation: borderPulse 1s ease-in-out infinite;
       }
 
       .urgency-morgen .waste-icon {
-        animation: wobbling 0.8s linear infinite alternate;
+        animation: wobbling 0.6s linear infinite alternate;
         filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.6));
       }
 
@@ -357,7 +361,17 @@ class WasteCollectionCard extends HTMLElement {
 
       @keyframes pulse {
         0%, 100% { transform: scale(1); }
-        50% { transform: scale(1.1); }
+        50% { transform: scale(1.15); }
+      }
+
+      @keyframes shake {
+        0%, 100% { transform: translateX(-2px) rotate(-5deg); }
+        50% { transform: translateX(2px) rotate(5deg); }
+      }
+
+      @keyframes borderPulse {
+        0%, 100% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); }
+        50% { box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); }
       }
 
       /* Bei schmalen Fenstern: Spalten beibehalten, nur etwas kompakter */
