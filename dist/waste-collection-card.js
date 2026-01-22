@@ -20,17 +20,17 @@ const WASTE_TYPES = {
     color: "200, 200, 200", // hellgrau/weiß
   },
   bio: {
-    name: "Biotonne",
+    name: "Bio",
     icon: "mdi:leaf",
     color: "76, 175, 80", // green
   },
   gelb: {
-    name: "Gelbe Tonne",
+    name: "Plastik",
     icon: "mdi:bottle-soda",
     color: "255, 235, 59", // yellow
   },
   papier: {
-    name: "Altpapier",
+    name: "Papier",
     icon: "mdi:newspaper-variant-outline",
     color: "33, 150, 243", // blue
   },
@@ -337,6 +337,7 @@ class WasteCollectionCard extends HTMLElement {
         font-size: 0.95em;
         color: var(--primary-text-color);
         margin-bottom: 2px;
+        white-space: nowrap;
       }
 
       .urgency-heute .name,
@@ -347,6 +348,7 @@ class WasteCollectionCard extends HTMLElement {
       .state {
         font-size: 0.85em;
         color: var(--secondary-text-color);
+        white-space: nowrap;
       }
 
       .urgency-heute .state,
